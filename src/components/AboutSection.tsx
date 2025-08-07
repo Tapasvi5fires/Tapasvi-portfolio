@@ -39,9 +39,9 @@ const AboutSection = () => {
     },
     {
       icon: <Code2 className="w-6 h-6 text-accent" />,
-      title: "Full-Stack Development",
-      description: "Building end-to-end applications with modern frameworks and technologies.",
-      technologies: ["React", "Node.js", "TypeScript", "MongoDB"]
+      title: "Data Analysis & Insights",
+      description: "Extracting actionable insights from complex datasets using advanced analytics and SQL.",
+      technologies: ["SQL", "Power BI", "Tableau", "Python Analytics"]
     },
     {
       icon: <Zap className="w-6 h-6 text-primary" />,
@@ -105,8 +105,8 @@ const AboutSection = () => {
                 {[
                   { category: "AI/ML", skills: ["Python", "TensorFlow", "PyTorch", "OpenAI"] },
                   { category: "Data Science", skills: ["Pandas", "NumPy", "Scikit-learn", "Jupyter"] },
-                  { category: "Web Dev", skills: ["React", "TypeScript", "Node.js", "MongoDB"] },
-                  { category: "Tools", skills: ["Git", "Docker", "AWS", "Linux"] }
+                  { category: "Data Analysis", skills: ["SQL", "Power BI", "Tableau", "Statistics"] },
+                  { category: "Full-Stack AI", skills: ["React", "FastAPI", "MongoDB", "AI Integration"] }
                 ].map((skillGroup, index) => (
                   <div key={skillGroup.category}>
                     <h4 className="text-primary font-semibold mb-2">{skillGroup.category}</h4>
