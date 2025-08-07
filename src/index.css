@@ -2,37 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TAPASVI'S PORTFOLIO - Dark Cyberpunk Design System */
+/* TAPASVI'S PORTFOLIO - Professional Modern Design System */
 
 @layer base {
   :root {
-    /* Dark Base Colors */
-    --background: 222 19% 8%;
-    --foreground: 280 100% 95%;
+    /* Professional Dark Base Colors */
+    --background: 222 25% 5%;
+    --foreground: 210 40% 95%;
 
     /* Card Colors */
-    --card: 225 24% 12%;
-    --card-foreground: 280 100% 95%;
+    --card: 222 25% 8%;
+    --card-foreground: 210 40% 95%;
 
     /* Popover Colors */
-    --popover: 225 24% 12%;
-    --popover-foreground: 280 100% 95%;
+    --popover: 222 25% 8%;
+    --popover-foreground: 210 40% 95%;
 
-    /* Primary - Electric Purple */
-    --primary: 280 100% 70%;
-    --primary-foreground: 222 19% 8%;
+    /* Primary - Professional Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 25% 5%;
 
-    /* Secondary - Cyber Cyan */
-    --secondary: 180 100% 60%;
-    --secondary-foreground: 222 19% 8%;
+    /* Secondary - Sophisticated Teal */
+    --secondary: 185 70% 45%;
+    --secondary-foreground: 222 25% 5%;
 
     /* Muted Colors */
-    --muted: 225 24% 15%;
-    --muted-foreground: 280 30% 70%;
+    --muted: 222 25% 12%;
+    --muted-foreground: 210 25% 70%;
 
-    /* Accent - Neon Pink */
-    --accent: 320 100% 65%;
-    --accent-foreground: 222 19% 8%;
+    /* Accent - Professional Purple */
+    --accent: 262 83% 58%;
+    --accent-foreground: 222 25% 5%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
@@ -43,16 +43,16 @@
     --input: 225 24% 15%;
     --ring: 280 100% 70%;
 
-    /* Cyberpunk Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(280, 100%, 70%) 0%, hsl(320, 100%, 65%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(180, 100%, 60%) 0%, hsl(280, 100%, 70%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(222, 19%, 8%) 0%, hsl(225, 24%, 12%) 50%, hsl(280, 100%, 10%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(225, 24%, 12%) 0%, hsl(225, 24%, 15%) 100%);
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(262, 83%, 58%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(185, 70%, 45%) 0%, hsl(217, 91%, 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222, 25%, 5%) 0%, hsl(222, 25%, 8%) 50%, hsl(217, 91%, 10%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(222, 25%, 8%) 0%, hsl(222, 25%, 12%) 100%);
 
-    /* Neon Glows */
-    --glow-primary: 0 0 20px hsl(280, 100%, 70%), 0 0 40px hsl(280, 100%, 70%), 0 0 60px hsl(280, 100%, 70%);
-    --glow-secondary: 0 0 20px hsl(180, 100%, 60%), 0 0 40px hsl(180, 100%, 60%), 0 0 60px hsl(180, 100%, 60%);
-    --glow-accent: 0 0 20px hsl(320, 100%, 65%), 0 0 40px hsl(320, 100%, 65%), 0 0 60px hsl(320, 100%, 65%);
+    /* Professional Glows */
+    --glow-primary: 0 0 20px hsl(217, 91%, 60%), 0 0 40px hsl(217, 91%, 60%);
+    --glow-secondary: 0 0 20px hsl(185, 70%, 45%), 0 0 40px hsl(185, 70%, 45%);
+    --glow-accent: 0 0 20px hsl(262, 83%, 58%), 0 0 40px hsl(262, 83%, 58%);
 
     /* Animation Timing */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,27 +77,27 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Enhanced Dark Mode (Default) */
+  /* Enhanced Professional Dark Mode (Default) */
   .dark, body {
-    --background: 222 19% 8%;
-    --foreground: 280 100% 95%;
-    --card: 225 24% 12%;
-    --card-foreground: 280 100% 95%;
-    --popover: 225 24% 12%;
-    --popover-foreground: 280 100% 95%;
-    --primary: 280 100% 70%;
-    --primary-foreground: 222 19% 8%;
-    --secondary: 180 100% 60%;
-    --secondary-foreground: 222 19% 8%;
-    --muted: 225 24% 15%;
-    --muted-foreground: 280 30% 70%;
-    --accent: 320 100% 65%;
-    --accent-foreground: 222 19% 8%;
+    --background: 222 25% 5%;
+    --foreground: 210 40% 95%;
+    --card: 222 25% 8%;
+    --card-foreground: 210 40% 95%;
+    --popover: 222 25% 8%;
+    --popover-foreground: 210 40% 95%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 25% 5%;
+    --secondary: 185 70% 45%;
+    --secondary-foreground: 222 25% 5%;
+    --muted: 222 25% 12%;
+    --muted-foreground: 210 25% 70%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 222 25% 5%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 280 100% 95%;
-    --border: 225 24% 20%;
-    --input: 225 24% 15%;
-    --ring: 280 100% 70%;
+    --destructive-foreground: 210 40% 95%;
+    --border: 222 25% 15%;
+    --input: 222 25% 12%;
+    --ring: 217 91% 60%;
   }
 }
 

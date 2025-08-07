@@ -98,8 +98,8 @@ const ContactSection = () => {
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-4xl md:text-5xl font-cyber font-bold text-gradient mb-6">
-            Let's Connect
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Let's <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Ready to collaborate on your next AI project? Have a question about my work? 

@@ -4,10 +4,17 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
+import InteractiveBackground from '@/components/InteractiveBackground';
+import { useScrollSpy } from '@/hooks/useScrollSpy';
 
 const Index = () => {
+  const activeSection = useScrollSpy(['hero', 'about', 'projects', 'contact']);
+
   return (
-    <div className="min-h-screen bg-background relative">
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
+      {/* Interactive Background */}
+      <InteractiveBackground currentSection={activeSection} />
+      
       {/* Particle Background */}
       <ParticleBackground />
       
@@ -15,7 +22,7 @@ const Index = () => {
       <Navigation />
       
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-20">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
