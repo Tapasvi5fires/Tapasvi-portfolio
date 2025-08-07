@@ -68,8 +68,8 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "tapasvi@example.com",
-      action: () => window.open('mailto:tapasvi@example.com', '_blank')
+      value: "tapasvi5fires@gmail.com",
+      action: () => window.open('mailto:tapasvi5fires@gmail.com', '_blank')
     },
     {
       icon: <Github className="w-6 h-6" />,

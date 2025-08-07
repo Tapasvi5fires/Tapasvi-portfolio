@@ -78,7 +78,7 @@ const Navigation = () => {
                 variant="ghost"
                 size="icon"
                 className="hover:bg-primary/10 hover:text-primary"
-                onClick={() => window.open('mailto:tapasvi@example.com', '_blank')}
+                onClick={() => window.open('mailto:tapasvi5fires@gmail.com', '_blank')}
               >
                 <Mail className="w-5 h-5" />
               </Button>
@@ -127,7 +127,7 @@ const Navigation = () => {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => window.open('mailto:tapasvi@example.com', '_blank')}
+                  onClick={() => window.open('mailto:tapasvi5fires@gmail.com', '_blank')}
                 >
                   <Mail className="w-5 h-5" />
                 </Button>
