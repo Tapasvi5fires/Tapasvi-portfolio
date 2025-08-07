@@ -3,9 +3,6 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Calendar, Star } from 'lucide-react';
-import mentalHealthBg from '@/assets/mental-health-bg.jpg';
-import codeWizardBg from '@/assets/codewizard-bg.jpg';
-import productivityBg from '@/assets/productivity-bg.jpg';
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,8 +33,7 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/Tapasvi5fires/mentalhealthmoodtracker",
       featured: true,
       status: "Active",
-      lastUpdated: "Jul 2025",
-      backgroundImage: mentalHealthBg
+      lastUpdated: "Jul 2025"
     },
     {
       title: "CodeWizard AI",
@@ -46,8 +42,7 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/Tapasvi5fires/CodeWizard-AI",
       featured: true,
       status: "Active",
-      lastUpdated: "Feb 2025",
-      backgroundImage: codeWizardBg
+      lastUpdated: "Feb 2025"
     },
     {
       title: "AI Productivity Tracker",
@@ -56,8 +51,7 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/Tapasvi5fires/AI-Productivity-Tracker",
       featured: true,
       status: "Active",
-      lastUpdated: "Feb 2025",
-      backgroundImage: productivityBg
+      lastUpdated: "Feb 2025"
     },
     {
       title: "Mood to Music",
@@ -121,18 +115,10 @@ const ProjectsSection = () => {
             {projects.filter(p => p.featured).map((project, index) => (
               <Card 
                 key={project.title}
-                className={`card-glow p-0 h-full transition-all duration-1000 delay-${index * 200} group relative overflow-hidden ${
+                className={`card-glow p-6 h-full transition-all duration-1000 delay-${index * 200} group ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
               >
-                {/* Dynamic Background */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-20 group-hover:opacity-30"
-                  style={{ backgroundImage: `url(${project.backgroundImage})` }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/70 group-hover:from-background/80 group-hover:via-background/70 group-hover:to-background/60 transition-all duration-500" />
-                
-                <div className="relative z-10 p-6">
                 <div className="space-y-4">
                   {/* Project Header */}
                   <div className="flex items-start justify-between">
@@ -191,7 +177,6 @@ const ProjectsSection = () => {
                       Demo
                     </Button>
                   </div>
-                </div>
                 </div>
               </Card>
             ))}

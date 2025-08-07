@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Download, Code, Brain, Github, Linkedin, Instagram } from 'lucide-react';
-import tapasviWorking from '@/assets/tapasvi-working.jpg';
-import AnimatedCounter from '@/components/AnimatedCounter';
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('');
@@ -37,25 +35,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-6xl mx-auto">
-          {/* Profile Photo */}
-          <div className="flex justify-center mb-12">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-background bg-gradient-to-br from-primary/20 to-accent/20 p-1">
-                <img 
-                  src={tapasviWorking} 
-                  alt="Tapasvi Panchagnula - AI Developer" 
-                  className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-700 filter hover:brightness-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-background animate-pulse flex items-center justify-center">
-                <div className="w-3 h-3 bg-white rounded-full"></div>
-              </div>
-            </div>
-          </div>
-
+        <div className="max-w-4xl mx-auto">
           {/* Floating Icons */}
           <div className="relative mb-8">
             <div className="absolute -top-10 -left-10 opacity-20">
@@ -133,24 +113,20 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border/30">
               {[
-                { label: 'Projects', value: 15, suffix: '+' },
-                { label: 'Technologies', value: 20, suffix: '+' },
-                { label: 'Experience', value: 3, suffix: '+ Years' },
-                { label: 'Contributions', value: 500, suffix: '+' }
+                { label: 'Projects', value: '15+' },
+                { label: 'Technologies', value: '20+' },
+                { label: 'Experience', value: '3+ Years' },
+                { label: 'Contributions', value: '500+' }
               ].map((stat, index) => (
                 <div 
                   key={stat.label} 
-                  className="text-center animate-slide-up group"
+                  className="text-center animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-gradient font-cyber mb-2 group-hover:scale-110 transition-transform duration-300">
-                    <AnimatedCounter 
-                      end={stat.value} 
-                      suffix={stat.suffix}
-                      duration={2000 + (index * 200)}
-                    />
+                  <div className="text-3xl md:text-4xl font-bold text-gradient font-cyber mb-2">
+                    {stat.value}
                   </div>
-                  <div className="text-muted-foreground text-sm uppercase tracking-wider group-hover:text-primary transition-colors duration-300">
+                  <div className="text-muted-foreground text-sm uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </div>
