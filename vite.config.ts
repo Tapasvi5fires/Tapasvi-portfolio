@@ -4,7 +4,7 @@ import path from "node:path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/Tapasvi-portfolio/" : "/", // important for GitHub Pages
+  base: (mode === "production" && !process.env.VERCEL) ? "/Tapasvi-portfolio/" : "/", // support both Vercel and GitHub Pages
   server: {
     host: true,
     port: 8080,
