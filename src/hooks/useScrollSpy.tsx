@@ -29,7 +29,7 @@ export const useScrollSpy = (sectionIds: string[], threshold = 0.3) => {
     return () => {
       observers.forEach((observer) => observer.disconnect());
     };
-  }, [sectionIds, threshold]);
+  }, [JSON.stringify(sectionIds), threshold]);
 
   return activeSection;
 };

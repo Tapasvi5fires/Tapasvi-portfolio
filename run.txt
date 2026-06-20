@@ -1,0 +1,3 @@
+cd Tapasvi-portfolio
+npm install
+npm run dev
